@@ -1,5 +1,6 @@
 {
   "name": "@elician/shared",
+  "homepage": "https://github.com/Elician/elician-shared",
   "private": false,
   "version": "0.0.1",
   "type": "module",
