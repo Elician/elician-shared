@@ -1,0 +1,37 @@
+.wrapper {
+  position: relative;
+  opacity: .8;
+  height: 25px;
+  cursor: pointer;
+  width: 25px;
+  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%2399A2AD%22%20d%3D%22M5%2014c1.1%200%202-.9%202-2s-.9-2-2-2-2%20.9-2%202%20.9%202%202%202zm7%200c1.1%200%202-.9%202-2s-.9-2-2-2-2%20.9-2%202%20.9%202%202%202zm7%200c1.1%200%202-.9%202-2s-.9-2-2-2-2%20.9-2%202%20.9%202%202%202z%22%2F%3E%3C%2Fsvg%3E);
+}
+
+.wrapper:hover {
+  opacity: 1;
+}
+
+.tooltip {
+  min-width: 200px;
+  padding: 5px 0;
+  background-color: #2e3438;
+  border: 1px solid #343a3f;
+  border-radius: 5px;
+}
+
+.arrow {
+  top: -4px;
+}
+
+.arrow::after {
+  content: '';
+  position: absolute;
+  background-color: #2e3438;
+  z-index: -1;
+  transform: rotate(45deg);
+  left: -5px;
+  border-top: 1px solid #343a3f;
+  border-left: 1px solid #343a3f;
+  width: 7px;
+  height: 7px;
+}

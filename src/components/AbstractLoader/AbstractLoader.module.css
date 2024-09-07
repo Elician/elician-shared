@@ -1,0 +1,17 @@
+.overlay {
+  background-color: #23272A;
+  background-image: url(../../../public/pattern-center-light.png);
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat repeat;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

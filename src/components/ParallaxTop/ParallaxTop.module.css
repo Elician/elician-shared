@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.line {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(5px);
+}
+
+.wrapperHeader {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #23272A;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://cdn.elician.ru/shared/web/launcher.jpg);
+}
+
+.header h1, .header h2, .header h3 {
+  color: #fffffe;
+}
+
+.header h1 {
+  font-size: 45px;
+}
+
+.header h2 {
+  margin-top: 5px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.header .wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.wrapper {
+  margin-bottom: 20px;
+}

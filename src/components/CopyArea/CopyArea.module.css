@@ -1,0 +1,75 @@
+.codeInp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  border-radius: 12px;
+  padding: 10px 14px;
+  background-color: #2e3438;
+  border: 2px solid #343a3f;
+  margin-top: 12px;
+  max-width: 270px;
+}
+
+.blackout {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(39, 44, 47, 0.4);
+}
+
+.name {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.descInp {
+  color: #fffffe;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.icons > div {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-metalic);
+}
+
+.icons > div:hover {
+  background-color: #343a3f;
+  border-radius: 50%;
+}
+
+.icons > div:active {
+  transform: scale(0.95);
+}
+
+.icons > div svg {
+  width: 22px;
+  height: 22px;
+}
+
+.success .descInp {
+  color: var(--color-main);
+}
+
+.content {
+  max-width: calc(100% - 42px);
+  flex: 1 0 auto;
+}

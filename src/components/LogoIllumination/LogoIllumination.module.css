@@ -1,0 +1,19 @@
+.wrapper {
+  position: relative;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 120px;
+  width: 120px;
+}
+
+.wrapper svg {
+  max-width: 100%;
+  position: absolute;
+}
+
+.wrapper svg:first-child {
+  filter: blur(12px);
+  opacity: .25;
+}

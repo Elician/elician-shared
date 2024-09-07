@@ -1,0 +1,81 @@
+.button {
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: center;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 20px;
+  align-items: center;
+  height: 37px;
+  overflow: hidden;
+  vertical-align: bottom;
+  position: relative;
+  transition: 0.1s all;
+  user-select: none;
+  background-color: #33c767;
+  color: #000;
+}
+
+.button:active {
+  background-color: #28a254;
+}
+
+.button.errored {
+  background-color: #fc3549;
+  color: #fffffe;
+}
+
+.button.errored:active {
+  background-color: #da2f41;
+}
+
+.button.secondary {
+  background-color: transparent;
+  color: var(--color-main);
+}
+
+.button.secondary.errored {
+  background-color: #fc354930;
+  color: #fc3549;
+}
+
+.button.secondary.errored:active {
+  background-color: #fc354940;
+}
+
+.button:active:not(.disabled):not(.loading) span {
+  transform: translateY(1px);
+}
+
+.button.loading {
+  cursor: default;
+}
+
+.button.loading span {
+  opacity: 0;
+}
+
+.button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button svg {
+  height: 11px;
+  width: 11px;
+  margin-left: 8px;
+  fill: currentColor !important;
+}
+
+.loaderBlock {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.loaderBlock .loader {
+  margin: auto !important;
+}
+ 

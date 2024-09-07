@@ -1,0 +1,103 @@
+.overlay {
+  user-select: none;
+}
+
+.overlay.disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.errorBottom {
+  color: #000;
+  font-size: 13px;
+}
+
+.wrapper {
+  border-radius: 12px;
+  background-color: var(--bg-color-els);
+  border: 2px solid var(--bg-color-els-sec);
+
+  width: 100%;
+  font-size: 16px;
+}
+
+.wrapper.error {
+  border: 2px solid var(--color-red);
+}
+
+.wrapper > label {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.input {
+  flex: 1 0 auto;
+  padding: 8px 12px;
+  min-width: 100px;
+  border: none;
+  background: transparent;
+  color: #dadada;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.input:focus::placeholder {
+  opacity: .65;
+}
+
+.input::placeholder {
+  font-weight: 600 !important;
+  color: var(--input-color) !important;
+}
+
+.tooltip {
+  margin-top: 5px;
+  font-size: 12px;
+  margin-left: 7px;
+  color: var(--color-light);
+}
+
+.tooltip.error {
+  color: var(--color-red);
+}
+
+.wrapperContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 40px;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  width: 45px;
+  height: 36px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.view svg {
+  width: 23px;
+  height: 23px;
+  fill: #818c99;
+  transition: all .2s ease-in-out;
+}
+
+.view:hover svg {
+  fill: #5a6c7d;
+}
+
+.annotationIcon {
+  max-width: 300px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.annotationIcon svg {
+  width: 9px;
+  margin-left: 4px;
+  height: 9px;
+  fill: #818c99;
+}

@@ -1,0 +1,38 @@
+.dlWrapper {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.name {
+  width: 50%;
+  word-break: break-word;
+  position: relative;
+}
+
+.name span {
+  align-items: flex-start;
+  background: #272C2F;
+  display: inline;
+  padding-right: 7px;
+  position: relative;
+}
+
+.name:before {
+  border-bottom: 1px dotted rgba(139, 150, 163, 0.2);
+  bottom: .2em;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.value {
+  font-weight: 600;
+  margin-left: 10px;
+  color: var(--color-text);
+  width: calc(50% - 10px);
+}

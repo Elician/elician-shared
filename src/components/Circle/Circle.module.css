@@ -1,0 +1,35 @@
+.progress {
+  fill: none;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-dasharray: 160;
+  transform: rotate(-90deg);
+  transform-origin: 49% 49%;
+  animation: big 1.5s ease-in-out;
+}
+
+.bg {
+  fill: none;
+  stroke-width: 6px;
+  stroke: #2e3438;
+}
+
+.circle {
+  position: relative;
+  margin-right: 10px;
+}
+
+.circle > p {
+  font-size: 14px;
+  font-weight: 900;
+  position: absolute;
+}
+
+.svg, .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 47px;
+  height: 47px;
+}

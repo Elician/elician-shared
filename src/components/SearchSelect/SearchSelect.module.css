@@ -1,0 +1,126 @@
+.wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.wrapper.disabled {
+  pointer-events: none;
+  opacity: .5;
+}
+
+.wrapperContent {
+  position: relative;
+}
+
+.tooltip {
+  margin-top: 5px;
+  font-size: 12px;
+  margin-left: 7px;
+  color: var(--color-light);
+}
+
+.input {
+  font-weight: 600;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  background-color: var(--bg-color-els) !important;
+  border: 2px solid var(--bg-color-els-sec);
+  color: #dadada;
+}
+
+.input:focus::placeholder {
+  opacity: .65;
+}
+
+.input::placeholder {
+  font-weight: 600 !important;
+  color: var(--input-color) !important;
+}
+
+.input.opened {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.option {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.option:not(.cleared):hover {
+  background-color: #343a3f;
+}
+
+.option, .input, .nothing {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px 14px;
+}
+
+.selectWrapper {
+  background-color: var(--bg-color-els) !important;
+  border: 2px solid var(--bg-color-els-sec);
+  width: 100%;
+  top: 37px;
+  position: absolute;
+  z-index: 3;
+  border-radius: 0 0 12px 12px !important;
+  overflow: hidden;
+}
+
+.select {
+  max-height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.select::-webkit-scrollbar {
+  width: 3px;
+}
+
+.select::-webkit-scrollbar-thumb {
+  background: var(--bg-color-els-sec-scroll);
+}
+
+.select::-webkit-scrollbar-track-piece {
+  background: var(--bg-color-els);
+}
+
+.option svg {
+  fill: var(--color-main);
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+}
+
+.resulted {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.resulted p {
+  color: #dadada !important;
+  flex: 1 0 auto;
+  display: flex;
+  cursor: default;
+}
+
+.clear {
+  padding: 4px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .1s transform;
+}
+
+.clear:active {
+  transform: scale(0.95);
+}
+
+.clear svg {
+  fill: var(--color-red);
+}

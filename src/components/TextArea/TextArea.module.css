@@ -1,0 +1,65 @@
+.area {
+  max-width: 100%;
+  width: 100%;
+  resize: vertical;
+  background-color: transparent;
+
+  border: none;
+  padding: 8px 12px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #dadada;
+}
+
+.area:focus::placeholder {
+  opacity: .65;
+}
+
+.area::placeholder {
+  font-weight: 600 !important;
+  color: var(--input-color) !important;
+}
+
+.overlay {
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #2e3438;
+  border: 2px solid #343a3f;
+}
+
+.wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.error {
+  font-size: 13px;
+  margin-left: 4px;
+  color: var(--color-red);
+}
+
+.tooltip {
+  margin-top: 5px;
+  font-size: 12px;
+  margin-left: 7px;
+  color: var(--color-light);
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: .5;
+}
+
+.annotationIcon {
+  max-width: 300px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.annotationIcon svg {
+  width: 9px;
+  margin-left: 4px;
+  height: 9px;
+  fill: #818c99;
+}

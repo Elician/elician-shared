@@ -1,0 +1,13 @@
+.copy {
+  transition: .3s color;
+  cursor: pointer;
+}
+
+.copy svg {
+  width: 15px;
+  height: 15px;
+}
+
+.success {
+  color: var(--color-green);
+}

@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 5px;
+}
+
+.menu a, .menu p {
+  padding: 9px 13px;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #fffffe;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  border: 2px dashed #2e3438;
+  transition: .1s all;
+}
+
+.menu a.active, .menu p.active {
+  background-color: #2e3438;
+  border: 2px solid #343a3f;
+  cursor: default;
+}
+
+.menu a:not(.active):active, .menu p:not(.active):active {
+  transform: scale(.97);
+}
+
+.back svg {
+  width: 12px;
+  height: 12px;
+  transform: rotate(90deg);
+  margin-right: 7px;
+  fill: var(--color-main);
+}

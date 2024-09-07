@@ -1,0 +1,17 @@
+.circle {
+  margin-left: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(51, 199, 103, 0.4);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.point {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--color-main);
+}
